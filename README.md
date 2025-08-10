@@ -28,6 +28,16 @@ pip install -r requirements.txt
 Usage
 python wikipedia_kg_rag.py
 
+graph TD
+    A[Wikipedia Data] -->|Extract| B[Data Processor]
+    B -->|Store| C[Neo4j Graph]
+    B -->|Embed| D[Vector Store]
+    E[User Query] -->|Input| F[Query Engine]
+    F -->|Search| C
+    F -->|Match| D
+    C -->|Context| G[Response Generator]
+    D -->|Similar Docs| G
+    G -->|Generate| H[Final Answer]
 
 
 
