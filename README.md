@@ -3,11 +3,8 @@ Python LangChain Neo4j OpenAI Wikipedia
 
 An intelligent question-answering system powered by knowledge graphs, combining Neo4j database and Wikipedia data for efficient Retrieval-Augmented Generation (RAG).
 
-Core Features
-Smart Retrieval - Hybrid vector and graph-based search
-Knowledge Construction - Automated Wikipedia entity relationship extraction
- Context Aware - Multi-turn conversation memory
-Real-time Updates - Dynamic Wikipedia data synchronization
+ Features
+Smart Retrieval - Hybrid vector and graph-based search Knowledge Construction - Automated Wikipedia entity relationship extraction  Context Aware - Multi-turn conversation memory Real-time Updates - Dynamic Wikipedia data synchronization
 
 Requirements
 Python 3.8+
@@ -30,11 +27,7 @@ pip install -r requirements.txt
 
 Usage
 python wikipedia_kg_rag.py
-Example queries:
 
-# Simple query
-"How did the Roman empire fall?"
 
-# Query with chat history
-"When did he become the first emperor?"
+
 
